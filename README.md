@@ -26,4 +26,4 @@ Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&ut
 
 ## end result pic
 
-![pic](assets\front_end_react1.png)
+![pic](./assets/front_end_react1.png)
