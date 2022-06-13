@@ -1,9 +1,9 @@
 
 
-function Footer() {
+function Footer({counter}) {
   return (
     <footer className="px-5 py-4 bg-emerald-300">
-        <h3>&copy;2021</h3>
+        <h3>{counter} Location World Wide</h3>
     </footer>
   )
 }

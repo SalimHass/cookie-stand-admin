@@ -1,9 +1,9 @@
 
 
-function Form() {
+function Form({SubForm}) {
   return (
     
-    <dev className="grid grid-cols-1 gap-1 place-items-center mx-auto bg-emerald-100 h-96   ">
+    <dev className="grid grid-cols-1 gap-1 place-items-center mx-auto bg-emerald-100  py-8  ">
         <dev className="relative  grid gap-2 bg-emerald-300 px-8 py-8 w-3/4 rounded-md">
             
 
@@ -11,37 +11,36 @@ function Form() {
             
 
 
-        <form className="grid gap-2 grid-cols-4 grid-rows-2" >
+        <form className="grid gap-2 grid-cols-4 grid-rows-2" onSubmit={SubForm}>
        
             
         <lable className="col-span-4  ">Location
 
-        <input className="w-9/12" type={"text"}  />
+        <input className="w-9/12" type={"text"}  name="location" />
         </lable>
         
            
-        <lable>Minimum Customers per Hour
+        <lable className="bg-emerald-200 rounded p-1">Minimum Customers per Hour
 
-        <input className="w-full" type={"number"}  />
+        <input className="w-full" type={"number"} name="minCust" />
         </lable>
             
 
-        <lable>Maximum Customers per Hour
+        <lable className="bg-emerald-200 rounded p-1">Maximum Customers per Hour
 
-        <input className="w-full" type={"number"}  />
+        <input className="w-full" type={"number"} name="maxCust" />
         </lable>
             
-        <lable>Average Cookies per Sale
+        <lable className="bg-emerald-200 rounded p-1 ">Average Cookies per Sale
 
-        <input className="w-full" type={"number"}  />
+        <input className="w-full" type={"number"}  name="avgCookies"/>
         </lable>
        
         
-        <input className="bg-emerald-500 h-16 w-60" type={"submit"} value={"Create"}></input>
+        <input className=" felx bg-emerald-500 h-4/6 w-5/6 rounded "  type={"submit"} ></input>
         
     </form>
-    <p className="bg-emerald-300 place-self-center text-xl">
-        Report table comming soon...</p>
+  
         </dev>
     </dev>
     
