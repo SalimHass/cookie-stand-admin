@@ -14,7 +14,7 @@ export default function ReportTable({ formList }) {
             <tbody>
             { formList.map(element=>{return (<tr className="border border-black"><td>{element.location}</td>{hourlySales.map(hSales=>{return (<td className="border border-black">{hSales}</td>)})}
             
-            <td></td></tr>)})}
+            <td>{hourlySales.reduce((total, sales) => total += (sales), 0)}</td></tr>)})}
  
             </tbody>
             <tfoot>
